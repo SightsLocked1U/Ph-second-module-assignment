@@ -1,0 +1,78 @@
+@import "tailwind";
+
+/* shared style */
+
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header, main{
+margin: 30px 150px;
+}
+
+.text-ornge{
+  color:#E95A08
+}
+/* nav bar style  */
+nav ul li{
+  list-style: none;
+}
+
+.nav-bar{
+  display: flex;
+  gap: 30px;
+}
+.logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-content{
+  width: 570px;
+}
+
+/* media query for iphone 14 pro max (430*932)  */
+@media screen and (width:430px) {
+  header, main{
+margin: 10px 20px auto 20px;
+}
+.hero{
+  flex-direction: column-reverse;
+ 
+}
+
+ .home, .shop, .about{
+  display: none;
+ }
+ .cart{
+  margin-right: 10px;
+ }
+ /* media query hero banner (mqh) */
+ .mqh{
+  width: 100%;
+  
+ }
+ .hero-title{
+  font-size: 24px ;
+  margin-top: 30px;
+  width: 360px;
+ }
+ .hero-subtitle{
+  font-size: 14px;
+  margin-top: 10px;
+  max-width: 360px;
+ }
+ .hero-content{
+width: 430px;
+ }
+}
